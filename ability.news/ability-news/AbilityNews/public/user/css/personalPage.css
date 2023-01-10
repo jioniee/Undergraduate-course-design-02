@@ -1,0 +1,523 @@
+body{
+    background-color: #F5F5F5;
+}
+.navbar{
+    background-color: white;
+}
+
+
+/* set up the linkable part when mouse hovering */
+a:hover {
+    text-decoration: none;
+
+}
+  
+/* set up image display */
+img {
+
+    display: block;
+    max-width: 100%;
+}
+/*Set container*/
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0 46.67px;
+    padding: 0 15px;
+}
+/* set border-radius for image and the left side-bar */
+img,.side-bar .list-group-item,.side-bar-card {
+    border-radius: 3px;
+}
+  
+/* set up the navigation bar */
+.navbar-brand {
+    /*set up the logo picture for the navbar*/
+    width: 60px;
+    background-image: url(../img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center center;
+}
+
+/*set up side menu bar*/
+.col-sm-2 {
+    width: 25%;
+    padding-left: 60px;
+}
+.side-bar{
+    background-color: white;
+    margin-left: 20%;
+    
+}
+.side-bar .list-group-item {
+    border: 0;
+    margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active ,.hide2.active{
+    background-color: rgb(211, 233, 250);
+    color: #555555;
+}
+#nav-title1 a{
+    color: #555555;
+}
+.side-bar .list-group-item {
+
+    border-radius: 0;
+}
+.list-group-item {
+    font-size: 15px;
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: start;
+    font-weight: bold;
+    
+}
+.list-group-item i{
+    position: absolute;
+    top: 18px;
+    right: 15px;
+    border: 4.5px solid transparent;
+    border-top-color: black;
+}
+
+.side-bar .list-group-item:hover{
+    background-color: rgb(213, 233, 250);
+}
+
+/*#hide1, #hide2{
+    background-color: rgba(235, 234, 234, 0.925);
+    height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 14px;
+}*/
+/*.hide1{
+    height: 80px;
+}
+.hide2{
+    line-height: 40px;
+    font-weight: bold;
+    background-color: rgba(235, 234, 234, 0.925);
+    height: 0;
+    overflow: hidden;
+    margin: 0 0 5px;
+    padding: 10px 15px;
+    font-weight: normal;
+    font-size: 13px;
+}
+#hide1:hover, #hide2:hover{
+    background-color: rgb(213, 233, 250);
+}*/
+.hide1{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+.hide1 a{
+    display: block;
+    height: 40px;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    
+    text-align: start;
+    line-height: 20px;
+    padding: 10px 15px;
+    margin: 0 0 5px;
+    background-color: rgba(235, 234, 234, 0.925);
+}
+.hide1 a:hover{
+    display: block;
+    height: 40px;
+    width: 100%;
+    color: #555555;
+    font-size: 14px;
+    text-align: start;
+    line-height: 20px;
+    background-color: rgb(211, 233, 250);
+}
+
+/*myPost - set up news list*/
+.news-list-item {
+  background-color: #fff;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-list-item:first-child {
+  padding-top: 0;
+}
+
+.news-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block;
+  color: #000;
+  background-color: #fff;
+}
+
+.news-list-item .title:hover {
+  color: #33CCFF;
+}
+
+.news-list-item .info {
+  color: #ccc;
+}
+
+.avatar {
+    display: inline-block;
+  }
+
+.avatar img {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+/*my profile*/
+.profile-img, .privacy{
+    width: 60%;
+    background-color: white;
+    padding-left: 15px;
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    border-bottom: 1px solid #eee;
+    float: left;
+    margin-left:20px;
+    
+    
+}
+/*my profile-photo*/
+#photo{
+    width: 15%;
+    margin-top: 10px;
+    margin-left: auto; 
+    margin-right:auto; 
+    display:block;
+    /*border: 2px solid #ffd811;*/
+    border-radius: 50%;
+    padding:5px;
+    border:1px double #ffd811;
+}
+.profile-setting{
+    margin-left: 28%; 
+    margin-right:auto; 
+    margin-top: 40px;
+}
+.profile-setting h2{
+    margin-top: 50px;
+    font-family:  Arial, sans-serif;
+}
+.profile-setting p{
+    font-family:  Arial, sans-serif;
+    color: #7c7c7c;
+    font-size: 16px;
+
+}
+.profile-setting button{
+    background-color: white;
+    color: #fad209;
+    /*box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);*/
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    line-height: 17px;
+    align-items: center;
+    position: relative;
+    border: 1px solid #ffd811;
+    border-radius: 100px;
+} 
+
+.submmit button{
+    margin-top: 50px;
+    margin-left: 20%;
+    background-color: #ffd811;
+    height: 35px;
+    width: 80px;
+    color: white;
+    font-size: 20px;
+    border:1.5px solid rgb(253, 251, 249);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 6px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.submmit button:hover{
+    background-color: #ffea7f;
+}
+.profile-setting textarea{
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffd811;
+    border-image: initial;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+
+}
+.about textarea{
+    width: 280px;
+    height:150px;
+}
+
+
+/*my comments*/
+.my-comments .list-header hr, .privacy .header hr{
+    width: 100%;
+    border-top: 2px dashed #ffd811;
+    
+}
+.my-comments{
+    width: 60%;
+    background-color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    border-bottom: 1px solid #eee;
+    float: left;
+    margin-left:20px;
+}
+.list-header h2{
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.comment1 h3,.comment2 h3,.comment3 h3{
+    padding-top: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    
+}
+
+.comment1 img, .comment2 img, .comment3 img{
+    width: 8%;
+    margin-top: 10px;
+    padding-left: 5px;
+    margin-right: 20px;
+    border-radius: 50%;
+    float: left;
+}
+
+.comment1 h4, .comment2 h4,.comment3 h4{
+    padding-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.comment1-p p, .comment2-p p,.comment3-p p{
+    padding-top: 15px;
+    clear: both;
+    font-size: 18px;
+}
+.comment1-p span, .comment2-p span,.comment3-p span{
+    font-size: 15px;
+    color: #7c7c7c;
+    
+}
+.my-comments hr{
+    width: 100%;
+    border-top: 2px solid #F5F5F5;
+}
+a{
+    color: black;
+}
+/*set up style for secure center*/
+.privacy{
+    width: 65%;
+}
+
+
+.privacy .header h1{
+    font-size: 28px;
+
+}
+.privacy .content h2{
+    font-size: 21px;
+    display: inline-block;
+    padding-right: 10px;
+    
+}
+.privacy .header p{
+    font-size: 14px;
+    padding-top: 5px;
+
+}
+.privacy .content p{
+    font-size: 14px;
+    color: #7c7c7c;
+    padding-top: 5px;
+}
+#FAQ{
+    color: #0079d3;
+}
+/*switch button*/
+.switch{
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    margin: 0;
+    width: 40PX;
+    height: 24PX;
+    border: 1PX solid #EBEBF9;
+    outline: 0;
+    border-radius: 16PX;
+    box-sizing: border-box;
+    background-color: #EBEBF9;
+    -webkit-transition: background-color 0.1s, border 0.1s;
+    transition: background-color 0.1s, border 0.1s;
+    display: inline-block;
+    
+    cursor: pointer;
+    
+}
+
+.switch:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 38PX;
+    height: 22PX;
+    border-radius: 19PX;
+    background-color: #EBEBF9;
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    transition: -webkit-transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+    transition: transform 0.35s cubic-bezier(0.45, 1, 0.4, 1);
+}
+
+.switch:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 1px;
+    width: 22PX;
+    height: 22PX;
+    border-radius: 15PX;
+    background-color: #FFFFFF;
+    -webkit-transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    transition: -webkit-transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+    transition: transform 0.35s cubic-bezier(0.4, 0.4, 0.25, 1.35);
+}
+
+.switch:checked{
+    background: #0079d3;
+    border: solid 1px #0079d3;
+}
+
+.switch:checked:before{
+    transform: scale(0);
+}
+
+.switch:checked:after{
+    transform: translateX(15PX);
+}
+/*CSS rules for publishing queue*/
+.queue table{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: start;
+    display: block;
+}
+tr{
+    background-color: white;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+thead tr,tfoot tr{
+    border: 1.4px solid rgb(221, 221, 221);
+}
+tbody tr{
+    border-left: 1.3px solid rgb(221, 221, 221);
+    border-right: 1.3px solid rgb(221, 221, 221);
+}
+th, td{
+    font-size: 15px;
+    padding: 8px;
+}
+/*Format th*/
+th{
+    text-align: left;
+    color: black;
+    background-color: white
+}
+
+/*Specify the background color for the even table rows*/
+tr:nth-child(even){
+    background-color: rgb(249, 249, 249);
+}
+.viewIcon:before {
+    font-size: 13px;
+    content: "\f06e";
+    display: inline-block;
+    font-family: "FontAwesome";
+    vertical-align: baseline;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(34, 113, 162);
+    line-height: 30px;
+    margin-left: 4px; 
+    
+}
+.approveIcon:before{
+    font-size: 13px;
+    content: "\f00c";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(34, 113, 162);
+    line-height: 30px;
+    margin-left: 6px; 
+}
+.disapproveIcon:before{
+    font-size: 13px;
+    content: "\f00d";
+    display: inline-block;
+    font-family: "FontAwesome";
+    font-weight: normal;
+    font-style: normal;
+    vertical-align: baseline;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(34, 113, 162);
+    line-height: 30px;
+    margin-left: 7px; 
+
+}
+.view, .approve, .disapprove{
+    width: 26px;
+    height: 32px;
+    background-color: rgb(243, 245, 246);
+    border: 1px rgb(34, 113, 162) solid;
+    border-radius: 2.5px;
+    display: inline-block;
+}
+.view:hover, .approve:hover, .disapprove:hover{
+    border: 1px rgb(28,96,136) solid;
+}
+

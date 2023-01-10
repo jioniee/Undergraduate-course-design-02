@@ -1,0 +1,8 @@
+{
+    "users":[
+        {"User_id":1, "User_First_Name":"Amy", "User_Last_Name":"James", "User_Email":"u1234567@anu.edu.au", "Username":"abcd", "Password":"123456", "Log_In_Status":false, "Last_Log_In_Time": "2021-04-16 18:27:30"},
+        {"User_id":2, "User_First_Name":"Berry", "User_Last_Name":"Smith", "User_Email":"u2345671@anu.edu.au", "Username":"bcda", "Password":"234561", "Log_In_Status":false, "Last_Log_In_Time": "2021-04-16 18:26:30"},
+        {"User_id":3, "User_First_Name":"Chalrs", "User_Last_Name":"Elith", "User_Email":"u3456712@anu.edu.au", "Username":"cdab", "Password":"345612", "Log_In_Status":false, "Last_Log_In_Time": "2021-04-16 18:22:30"},
+        {"User_id":4, "User_First_Name":"Dessy", "User_Last_Name":"Lee", "User_Email":"u4567123@anu.edu.au", "Username":"dabc", "Password":"456123", "Log_In_Status":false, "Last_Log_In_Time": "2021-04-16 18:21:30"}
+    ]
+}

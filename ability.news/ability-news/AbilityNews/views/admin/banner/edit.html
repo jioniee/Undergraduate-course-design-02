@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="renderer" content="webkit">
+<title></title>
+<link rel="stylesheet" href="/public/admin/css/pintuer.css">
+<link rel="stylesheet" href="/public/admin/css/admin.css">
+<script src="/public/admin/js/jquery.js"></script>
+<script src="/public/admin/js/pintuer.js"></script>
+</head>
+<body>
+<div class="panel admin-panel">
+  <div class="panel-head"><strong><span class="icon-key"></span> edit：</strong></div>
+  <div class="body-content">
+    <form method="post" enctype="multipart/form-data" class="form-x" action="">
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">name：</label>
+        </div>
+        <div class="field">
+          <input type="text" class="input " value="<%= data.name%>"  id="mpass" name="name" size="50" placeholder="Enter the name" data-validate="required:请输入轮播图名" />       
+          <input type="hidden" name="id" value="<%= data.id%>"> 
+          <input type="hidden" name="oldimg" value="<%= data.img%>">
+        </div>
+      </div>   
+      <div class="form-group">
+          <div class="label">
+            <label for="sitename">url：</label>
+          </div>
+          <div class="field">
+            <input type="text" class="input " value="<%= data.url%>" id="mpass" name="url" size="50" placeholder="Enter the url" data-validate="required:请输入轮播图跳转地址" />       
+          </div>
+        </div> 
+      <div class="form-group">
+        <div class="label">
+          <label for="sitename">sort：</label>
+        </div>
+        <div class="field">
+            <input type="number" class="input " value="<%= data.sort%>" id="mpass" name="sort" size="50" placeholder="Enter the sort" data-validate="required:请输入轮播图排序" />       
+          </div>
+      </div>      
+      <div class="form-group">
+          <div class="label">
+            <label for="sitename">picture：</label>
+          </div>
+          <div class="field">
+              <input type="file" class="input " id="mpass" name="img" size="50"/>    
+              <img src="<%= data.img%>" style="margin-top: 5px; width: 300px;">  
+            </div>
+        </div>  
+        
+        <div class="form-group">
+            <div class="label">
+              <label></label>
+            </div>
+            <div class="field">
+              <button class="button bg-main icon-check-square-o" type="submit">submit</button>   
+            </div>
+          </div> 
+    </form>
+  </div>
+</div>
+</body></html>

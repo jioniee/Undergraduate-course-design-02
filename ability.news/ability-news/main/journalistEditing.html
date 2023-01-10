@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <link rel="stylesheet" href="css/bootstrap-tagsinput.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha256-OFRAJNoaD8L3Br5lglV7VyLRf0itmoBzWUoM+Sji4/8=" crossorigin="anonymous"></script>
+
+    <!-- import the script for adding tag -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+    <script src="js/bootstrap-tagsinput-angular.js"></script>
+    <script src="js/bootstrap-tagsinput.js"></script>
+
+
+
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="css/journalist-editing.css" rel="stylesheet" type="text/css">
+
+    <!-- Main Quill library -->
+    <script src="https://cdn.quilljs.com/1.3.6/quill.min.js"></script>
+
+    <!-- Theme included stylesheets -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+
+
+    <title>Journalist Editing</title>
+</head>
+
+<body>
+    <!-- Edit the navbar -->
+    <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- set up logo picture and link it to the main page -->
+                <a href="MainPage.html" class="navbar-brand"></a>
+            </div>
+            <!-- edit the content for this navbar -->
+            <ul class="nav navbar-nav">
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+                <li><a href="#">item</a></li>
+            </ul>
+            <!-- the log in and log out part -->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="LogIn.html">Log in</a></li>
+                <li><a href="LogIn.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="advertisement" style="display:inline"></div>
+        <!-- This part is the left editing page-->
+        <div class="col-md-8" style="display:inline">
+            <ol class="breadcrumb">
+                <li><a href="MainPage.html">Home</a></li>
+                <li class="active">Editing</li>
+            </ol>
+
+
+            <!-- The following parts add the COS under the breadcrumb -->
+            <div class="COS">
+                <div class="COSfield input-group mb-3">
+                    <div class="input-group-addon" id="Slug">
+                        <span class="input-group-text">Slug</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Enter Slug here">
+                </div>
+
+                <div class="COSfield input-group mb-3">
+                    <div class="input-group-addon" id="About">
+                        <span class="input-group-text">About</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="About the story...">
+                </div>
+
+                <label>Author Information:</label>
+
+                <div class="author_contact">
+                    <div class="author-first-block">
+                        <div class="COSfield form-inline">
+                            <div class="input-group mb-3 first">
+                                <div class="input-group-addon" id="Author_First_Name">
+                                    <span class="input-group-text">First Name</span>
+                                </div>
+                                <input type="text" class="form-control" id="Author_First_Name_Input"
+                                    placeholder="Enter First name here">
+                            </div>
+    
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Author_Last_Name">
+                                    <span class="input-group-text">Last Name</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter last name here">
+                            </div>
+                        </div>
+    
+                        <div class="COSfield form-inline">
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Phone_Number">
+                                    <span class="input-group-text">Contact Number</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter phone number here">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Email_Info">
+                                    <span class="input-group-text">E-mail</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter E-mail here">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="form-btns-wrapper" style="text-align: right">
+                    <a class="btn-small js-add-author-btn" id="addAuthor"><i class="fa fa-plus-circle"
+                            aria-hidden="true"></i> Add
+                        another author</a>
+                </div>
+
+                <label>Editor Information:</label>
+
+                <div class="editor_contact">
+                    <div class="editor-first-block">
+                        <div class="COSfield form-inline">
+                            <div class="input-group mb-3 first">
+                                <div class="input-group-addon" id="Editor_First_Name">
+                                    <span class="input-group-text">First Name</span>
+                                </div>
+                                <input type="text" class="form-control" id="Editor_First_Name_Input"
+                                    placeholder="Enter First name here">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Editor_Last_Name">
+                                    <span class="input-group-text">Last Name</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter last name here">
+                            </div>
+                        </div>
+                        <div class="COSfield form-inline">
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Phone_Number">
+                                    <span class="input-group-text">Contact Number</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter phone number here">
+                            </div>
+                            <div class="input-group mb-3">
+                                <div class="input-group-addon" id="Email_Info">
+                                    <span class="input-group-text">E-mail</span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Enter E-mail here">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="form-btns-wrapper" style="text-align: right">
+                <a class="btn-small js-add-author-btn" id="addEditor"><i class="fa fa-plus-circle"
+                        aria-hidden="true"></i> Add another Editor</a>
+            </div>
+
+            <!--Set the title text input-->
+            <div class="form-group">
+                <label>News Title:</label>
+                <input type="text" class="form-control">
+            </div>
+
+            <div class="tags">
+                <!--form for entering tags-->
+                <label for="tags">Type a new tag and hit enter:</label>
+                <!--text field for entering tags-->
+                <input type="text" data-role="tagsinput" name="tags" class="form-control">
+
+            </div>
+
+
+            <!--add buttons for selecting and deleting cover picture-->
+            <div class="buttons">
+                <label>Load a cover picture for your article:</label>
+
+                <button class="btn btn-primary" id="upload-pic-btn">Upload a picture<input id="fileInput" type="file"
+                        style="display:none;" /></button>
+
+                <button class="btn btn-warning" id="delete-pic-btn">Delete a picture</button>
+            </div>
+
+
+            <!--the cover picture for preview-->
+            <label>Preview of the cover picture:</label>
+            <div class="picture-preview">
+                <img id="loaded-cover-picture" src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+            </div>
+
+            <div class="executive-summary-div form-group green-border-focus">
+                <label id="executive-summary">Executive summary:</label>
+                <textarea class="form-control mb-3 story"  placeholder="Enter the executive summary here"
+                    rows="3"></textarea>
+            </div>
+
+            <!-- set the toolbar appearance -->
+            <label id="body-paragraphs">Body paragraphs:</label>
+            <div id="toolbar">
+                <span class="ql-formats">
+                    <select class="ql-font"></select>
+                    <select class="ql-size"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-bold"></button>
+                    <button class="ql-italic"></button>
+                    <button class="ql-underline"></button>
+                    <button class="ql-strike"></button>
+                </span>
+                <span class="ql-formats">
+                    <select class="ql-color"></select>
+                    <select class="ql-background"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-script" value="sub"></button>
+                    <button class="ql-script" value="super"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-header" value="1"></button>
+                    <button class="ql-header" value="2"></button>
+                    <button class="ql-blockquote"></button>
+                    <button class="ql-code-block"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-list" value="ordered"></button>
+                    <button class="ql-list" value="bullet"></button>
+                    <button class="ql-indent" value="-1"></button>
+                    <button class="ql-indent" value="+1"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-direction" value="rtl"></button>
+                    <select class="ql-align"></select>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-link"></button>
+                    <button class="ql-image"></button>
+                    <button class="ql-video"></button>
+                    <button class="ql-formula"></button>
+                </span>
+                <span class="ql-formats">
+                    <button class="ql-clean"></button>
+                </span>
+            </div>
+            <!-- set the text area for the quill editor -->
+            <div id="editor"></div>
+
+            <div class="executive-summary-div form-group green-border-focus">
+                <label id="end-summary">End summary:</label>
+                <textarea class="form-control mb-3 story" " placeholder="Enter the overall summary here"
+                    rows="3"></textarea>
+            </div>
+
+            <!-- set the buttons for posting the article -->
+            <div class="post-buttons">
+                <button class="btn btn-warning left">Post for checking</button>
+                <button class="btn btn-success" id="draft-button">Save draft</button>
+                <button class="btn btn-danger" id="cancel-button">Cancel editing</button>
+            </div>
+
+            
+
+
+
+
+
+
+        </div>
+
+        <!--This part is the right editing page-->
+        <div class="col-md-4"></div>
+
+        <!-- the script for the quill text editor -->
+        <script type="text/javascript" src="./js/journalist-editing.js"></script>
+        <script>
+            const quill = new Quill('#editor', {
+                modules: {
+                    toolbar: '#toolbar'
+                },
+                theme: 'snow' 
+            });
+        </script>
+
+
+
+    </div>
+    <!-- set up the footer -->
+    <div class="footer">
+        AbilityNews| Professional Software Engineering Project - Sem 1 2021 | the Australian National University
+    </div>
+
+
+</body>
+
+</html>
+
+<!-- 
+    the source of the quill text editor: https://www.cnblogs.com/linxiyue/p/10300087.html
+ -->

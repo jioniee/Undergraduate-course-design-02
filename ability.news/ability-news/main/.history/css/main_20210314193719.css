@@ -1,0 +1,156 @@
+/* set up the linkable part when mouse hovering */
+a:hover {
+  text-decoration: none;
+}
+
+/* set up image display */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* set border-radius for image and the left side-bar */
+img,
+.side-bar .list-group-item,
+.side-bar-card {
+  border-radius: 3px;
+}
+
+/* set up the navigation bar */
+.navbar-brand {
+  /*set up the logo picture for the navbar*/
+  width: 60px;
+  background-image: url(../img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}
+
+.side-bar .list-group-item {
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active {
+  background-color: #ea0c3c;
+}
+
+.news-list-item {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-list-item:first-child {
+  padding-top: 0;
+}
+
+.news-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block;
+  color: #000;
+}
+
+.news-list-item .title:hover {
+  color: #33CCFF;
+}
+
+.news-list-item .info {
+  color: #ccc;
+}
+
+.avatar {
+  display: inline-block;
+}
+
+.avatar img {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.side-bar-card {
+  background: rgba(0, 0, 0, .05);
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+.side-bar-card.special {
+  padding: 15px 0;
+}
+
+.side-bar-card .text-one {
+  font-size: 150%;
+}
+
+.side-bar-card .card-title, 
+.side-bar-card .card-body .list .item{
+  padding: 10px 20px;
+}
+
+.side-bar-card .card-title {
+  font-size: 150%;
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.side-bar-card .card-body .list .item:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.side-bar-card .card-body .list .item .title {
+  padding-bottom: 5px;
+}
+
+.side-bar-card .card-body .list .item .desc {
+  color: #999;
+}
+
+.news-title {
+  line-height: 1.2;
+}
+
+.news-status {
+  color: #999;
+}
+
+.news-status .label {
+  opacity: .7;
+}
+
+.news-content {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.news-content img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.no-padding-h {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 50px 0;
+  text-align: center;
+  color: #999;
+}
+
+.container-small {
+  max-width: 500px;
+}
+
+.news-comment-show {
+  margin-top: 30px;
+  background-color: rgb(201, 201, 201);
+}

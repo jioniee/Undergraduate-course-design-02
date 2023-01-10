@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="../../../public/user/css/personalPage.css">
+
+	<title>Personal page</title>
+</head>
+
+<body>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="MainPage.html" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="LogIn.html">Log in</a></li>
+				<li><a href="SignUp.html">Sign up</a></li>
+			</ul>
+		</div>
+    </div>
+	<div class="container">
+    <!--Edit the side menu-->
+    <div class="col-sm-2">
+        <!-- edit the side bar of the left page -->
+        <div class="list-group side-bar">
+			<a href="./personalPage_myProfile.html" class="list-group-item">My Profile</a>
+			<a href="./personalPage_myComments.html" class="list-group-item">My Comments</a>
+
+			<div id="nav-title1" class="list-group-item active"><a href="#" >My Posts<i></i></a></div>
+			
+			<div class="hide1">
+				<a class="hide2" href="./personalPage_successfulPost.html" >-&nbsp;Successful Posts</a>
+				<a class="hide2" href="./personalPage_returnedPost.html" >-&nbsp;Returned Posts</a>
+			</div>
+			<a href="./personalPage_myDraft.html" class="list-group-item">My Draft</a>
+			<a href="./personalPage_myBookmarks.html" class="list-group-item">My Bookmarks</a>
+			<a href="./personalPage_secureCenter.html" class="list-group-item">Secure Center</a>
+        </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../../router/personalPage.js"></script>
+		<!--List the article that i posted-->
+		<div class="col-sm-7">
+			<!-- edit the main part for this page and this part is called news-list -->
+			<div class="news-list">
+				<!-- area for every piece of news is called news-list-item  -->
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="NewsPage2.html" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="#" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="#" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="#" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="#" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+				<div class="news-list-item clearfix">
+					<!-- this part is to set the picture for every piece of news -->
+					<div class="col-xs-5">
+						<!-- set the area the picture is supposed to locate in -->
+						<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+					</div>
+					<!-- this part is for the main body for every piece of news  -->
+					<div class="col-xs-7">
+						<a href="#" class="title">
+							title title title title title title title title title title title title
+						</a>
+						<!-- This part is about the author and published time -->
+						<div class="info">
+							<span><span class="avatar"><img src="../../../public/user/img/logo.jpg"></span>Author</span>,
+							<span>published time</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</body>
+</html>

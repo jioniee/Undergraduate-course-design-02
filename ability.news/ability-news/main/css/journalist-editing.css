@@ -1,0 +1,108 @@
+@charset "utf-8";
+
+.tags, .buttons, .executive-summary-div{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+
+
+
+.tags label{
+    display: block;
+}
+.bootstrap-tagsinput{
+    display: block
+}
+
+
+.buttons > button{
+    display:inline-block;
+    margin-left: 10px;
+    /* background-color:#bfbfbf; */
+    font-size: 12px
+}
+
+
+
+#loaded-cover-picture{
+    max-width: 100%;
+    max-height: 100%;
+}
+#editor{
+    height:200px;
+}
+
+.post-buttons > button{
+    margin-right: 15px;
+}
+
+#draft-button:hover, #cancel-button:hover{
+    background-color: #bfbfbf;
+}
+
+
+
+
+.COSfield{
+    margin-bottom: 15px;
+}
+
+/* set the style of the summary text area and the scroll bar */
+.story{
+    resize: none;
+    width: 100%;
+    overflow:auto;
+}
+
+.story::-webkit-scrollbar{
+    width: 10px;
+}
+
+.story::-webkit-scrollbar-track {
+    border-radius:5px;
+    background: rgba(0,0,0,0.1);
+}
+.story::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,0.2);
+}
+.story::-webkit-scrollbar-thumb:hover{
+    background: rgba(0,0,0,0.5);
+}
+
+
+/* following set some distance between first name and last name input fields, and contact number and email fields as well */
+.form-inline .input-group{
+    margin-right: 45px;
+}
+.form-inline .input-group.first{
+    margin-right: 78px;
+}
+
+/* set the picture preview property */
+.picture-preview{
+    width: 100%;
+    height: 400px;
+}
+
+#loaded-cover-picture{
+    max-height: 100%;
+    width: auto;
+    height: 100%;
+}
+
+/* set the appearance of buttons on the page */
+.buttons button, .post-buttons button{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5)
+}
+
+.post-buttons{
+    text-align:left;
+    margin-top: 20px;
+}
+
+.post-buttons button{
+    margin-right: 15px;
+
+}

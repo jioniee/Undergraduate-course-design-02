@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="../../../public/user/css/personalPage.css">
+
+	<title>Personal page</title>
+</head>
+
+<body>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="MainPage.html" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="LogIn.html">Log in</a></li>
+				<li><a href="SignUp.html">Sign up</a></li>
+			</ul>
+		</div>
+		
+    </div>
+	<div class="container">
+    <!--Edit the side menu-->
+    <div class="col-sm-2">
+        <!-- edit the side bar of the left page -->
+		<div class="list-group side-bar">
+			<a href="./personalPage_myProfile_editor.html" class="list-group-item">My Profile</a>
+			<a href="./publishQueue.html" class="list-group-item active">Publish Queue</a>
+			<a href="./personalPage_myComments_editor.html" class="list-group-item">My Comments</a>
+
+			<div id="nav-title1" class="list-group-item"><a href="#" >My Posts<i></i></a></div>
+			
+			<div class="hide1">
+				<a class="hide2" href="./personalPage_successfulPost_editor.html" >-&nbsp;Successful Posts</a>
+				<a class="hide2" href="./personalPage_returnedPost_editor.html" >-&nbsp;Returned Posts</a>
+			</div>
+			<a href="./personalPage_myDraft_editor.html" class="list-group-item">My Draft</a>
+			<a href="./personalPage_myBookmarks_editor.html" class="list-group-item">My Bookmarks</a>
+			<a href="./personalPage_secureCenter_editor.html" class="list-group-item">Secure Center</a>
+        </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../../../router/personalPage.js"></script>
+	<!--Publishing queue-->
+	<script  src="https://kit.fontawesome.com/97446b8f60.js" crossorigin="anonymous"></script>
+	<div class="queue">
+		<table>
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Type</th>
+					<th>Posted</th>
+					<th>Actions&nbsp;&nbsp&nbsp;</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td><a href="./NewsPage1.html">Disability Support Pension payment increase for people under 21</a></td>
+					<td>_</td>
+					<td>7/4/2021<br>By Tom</td>
+					<td class="actions">
+						<div class="actionButtons">
+							<div class="view">
+								<a href="">
+								<span class="viewIcon" title="view"></span></a>
+							</div>
+							
+							<div class="approve"><a href=""><span class="approveIcon" title="approve"></span></a></div>
+							<div class="disapprove"><a href=""><span class="disapproveIcon" title="disapprove"></span></a></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td><a href="./NewsPage2.html">WANTED: 21 Military Volunteers for Rugby League World Cup’s Wheelchair Tournament</a></td>
+					<td>_</td>
+					<td>16/11/2020<br>By Tom</td>
+					<td class="actions">
+						<div class="actionButtons">
+							<div class="view">
+								<a href="">
+								<span class="viewIcon" title="view"></span></a>
+							</div>
+							
+							<div class="approve"><a href=""><span class="approveIcon" title="approve"></span></a></div>
+							<div class="disapprove"><a href=""><span class="disapproveIcon" title="disapprove"></span></a></div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<th>ID</th>
+					<th>Title</th>
+					<th>Type</th>
+					<th>Posted</th>
+					<th>Actions</th>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+		
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="/public/home/css/LogIn.css">
+	<title>Login</title>
+</head>
+
+<body>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="/" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						NEWS
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">placeholder</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						FORUM
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">placeholder</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						CONNECTIONS
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">placeholder</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						ABOUT
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">placeholder</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="/signup">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="container container-small">
+		<img src="/public/home/img/logo.jpg" alt="logo">
+        <h1>PLEASE SIGN IN</h1>
+		<!-- the form for login -->
+        <form action="/check" name="f" method="post">
+            <!-- the username part -->
+            <div class="form-group">
+                <input name="username" placeholder="User Name" type="text" class="form-control">
+            </div>
+            <!-- the password part -->
+            <div class="form-group">
+                <input name="password" placeholder="Password" type="password" class="form-control">
+            </div>
+            <!-- the log in button -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+            </div>
+        </form>
+	</div>
+	
+	<!--Forget password section-->
+	<div class="forget-password">
+		<p> <a href ="./ResetPassword.html">Forget password?</a></p>
+
+	</div>
+	<!--Link to sign up-->
+	<div class="link-to-signup">
+		<p>Don't have account?<a href="/signup">&nbsp;Join now for free</a></p>
+	</div>
+	
+
+	<!-- set up the footer -->
+	<div class="footer">
+		<p>AbilityNews| Professional Software Engineering Project - Sem 2 2021 | the Australian National University </p>
+	</div>
+</body>
+</html>

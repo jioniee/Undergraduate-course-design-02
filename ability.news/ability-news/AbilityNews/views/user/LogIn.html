@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="../../public/login/css/login.css">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="MainPage.html" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="LogIn.html">Log in</a></li>
+				<li><a href="SignUp.html">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+    <div class="container container-small">
+		<img src="../../public/login/images/logo.jpg" alt="logo">
+        <h1>PLEASE SIGN IN</h1>
+		<!-- the form for login -->
+        <form action="/user/login" method="POST">
+            <!-- the username part -->
+            <div class="form-group">
+                <input placeholder="User Name" type="text" class="form-control" name="username">
+            </div>
+            <!-- the password part -->
+            <div class="form-group">
+                <input placeholder="Password" type="password" class="form-control" name="password">
+            </div>
+            <!-- the log in button -->
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block">LOGIN</button>
+            </div>
+        </form>
+	</div>
+	
+	<!--Forget password section-->
+	<div class="forget-password">
+		<p> <a href ="./ResetPassword.html">Forget password?</a></p>
+
+	</div>
+	<!--Link to sign up-->
+	<div class="link-to-signup">
+		<p>Don't have account?<a href="./SignUp.html">&nbsp;Join now for free</a></p>
+	</div>
+	
+
+	<!-- set up the footer -->
+	<div class="footer">
+		<p>AbilityNews| Professional Software Engineering Project - Sem 1 2021 | the Australian National University </p>
+	</div>
+</body>
+</html>

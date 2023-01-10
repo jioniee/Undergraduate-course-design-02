@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- the header for this website -->
+	<div class="container-fluid">
+		<div class="jumbotron" >
+			<h1>Want More?</h1>
+			<p><a class="btn btn-info btn-lg" role="button" href="SignUp.html">SignUp</a>
+		</div>
+	</div>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="MainPage.html" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<!-- <ul class="nav navbar-nav">
+				<li><a href="#">item</a></li>	
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul> -->
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Java 
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Java 
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Java 
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Java 
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+						<li><a href="#">另一个分离的链接</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						Item
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">jmeter</a></li>
+						<li><a href="#">EJB</a></li>
+						<li><a href="#">Jasper Report</a></li>
+						<li class="divider"></li>
+						<li><a href="#">分离的链接</a></li>
+						<li class="divider"></li>
+					</ul>
+				</li>
+			</ul>
+			<script>
+				$(function(){
+					// 默认显示
+					$(".dropdown-toggle").dropdown('toggle');
+				}); 
+			</script>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="LogIn.html">Log in</a></li>
+				<li><a href="SignUp.html">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<!-- Set up the left part for this page -->
+			<div class="col-sm-2">
+				<!-- edit the side bar of the left page -->
+				<div class="list-group side-bar">
+					<a href="#" class="list-group-item active">item</a>
+					<a href="#" class="list-group-item">item</a>
+					<a href="#" class="list-group-item">item</a>
+					<a href="#" class="list-group-item">item</a>
+					<a href="#" class="list-group-item">item</a>
+					<a href="#" class="list-group-item">item</a>
+				</div>
+			</div>
+			<!-- set up the main part in the middle of this page -->
+			<div class="col-sm-7">
+				<!-- edit the main part for this page and this part is called news-list -->
+				<div class="news-list">
+					<!-- area for every piece of news is called news-list-item  -->
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="NewsPage.html" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="#" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="#" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="#" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="#" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+					<div class="news-list-item clearfix">
+						<!-- this part is to set the picture for every piece of news -->
+						<div class="col-xs-5">
+							<!-- set the area the picture is supposed to locate in -->
+							<img src="https://dummyimage.com/600x400/222222/999999.png&text=News">
+						</div>
+						<!-- this part is for the main body for every piece of news  -->
+						<div class="col-xs-7">
+							<a href="#" class="title">
+								title title title title title title title title title title title title
+							</a>
+							<!-- This part is about the author and published time -->
+							<div class="info">
+								<span><span class="avatar"><img src="img/logo.jpg"></span>Author</span>,
+								<span>published time</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- this part is about the right place for this whole page -->
+			<div class="col-sm-3">
+				<!-- set up the search bar for the right part -->
+				<div class="search-bar">
+					<input type="search" class="form-control">
+					<!-- this part can be divided into several side-bar-card -->
+					<div class="side-bar-card special clearfix">
+						<div class="col-xs-5">
+							<img src="img/logo.jpg">
+						</div>
+						<div class="col-xs-7">
+							<div class="text-one">Contact: 123456</div>
+							<div >Other information</div>
+						</div>
+					</div>
+					<div class="side-bar-card">
+						<!-- This is the list of everything we want show in this part -->
+						<div class="card-body">
+							<div class="card-title">title</div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<!-- description for this part -->
+									<div class="desc">published date</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="card-title">title</div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<!-- description for this part -->
+									<div class="desc">published date</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="card-title">title</div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<!-- description for this part -->
+									<div class="desc">published date</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="card-title">title</div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<!-- description for this part -->
+									<div class="desc">published date</div>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="card-title">title</div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+									<!-- description for this part -->
+									<div class="desc">published date</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		AbilityNews| Professional Software Engineering Project - Sem 1 2021 | the Australian National University 
+	</div>
+</body>
+
+</html>

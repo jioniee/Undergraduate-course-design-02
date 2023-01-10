@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="renderer" content="webkit">
+  <title>Management Center</title>
+  <link rel="stylesheet" href="public/admin/css/pintuer.css">
+  <link rel="stylesheet" href="public/admin/css/admin.css">
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body style="background-color:#f2f9fd;">
+  <div class="header bg-main">
+    <div class="logo margin-big-left fadein-top">
+      <h2><img src="public/admin/images/y.jpg" class="radius-circle rotate-hover" height="50" alt="" />Welcome! <%= user %></h2>
+    </div>
+    <div class="head-l"><a class="button button-little bg-green" href="/" target="_blank"><span class="icon-home"></span>
+        Home Page</a> &nbsp;&nbsp;<a href="##" class="button button-little bg-blue"><span class="icon-wrench"></span>
+        Clear Cookie</a> &nbsp;&nbsp;<a class="button button-little bg-red" href="/admin/logout"><span
+          class="icon-power-off"></span> Sign Out</a> </div>
+  </div>
+  <div class="leftnav">
+    <div class="leftnav-title"><strong><span class="icon-list"></span>MENU</strong></div>
+    <h2><span class="icon-user"></span>USER</h2>
+    <ul>
+        <!-- .icon-caret-right:before{content:"\f0da";} -->
+      <li><a href="/admin/admin" target="right"><span class="icon-caret-right"></span>Admin</a></li>
+      <li><a href="/admin/user" target="right"><span class="icon-caret-right"></span>User</a></li>
+    </ul>
+
+    <h2><span class="icon-hacker-news" target="right"></span>CONTENT</h2>
+    <ul>
+      <!-- 链接执向的是访问的地址 -->
+      <li><a href="/admin/newstype" target="right"><span class="icon-caret-right"></span>Topic</a></li>
+      <li><a href="/admin/news" target="right"><span class="icon-caret-right"></span>News</a></li>
+      <li><a href="/admin/recommend" target="right"><span class="icon-caret-right"></span>Recommend</a></li>
+      <li><a href="/admin/comment" target="right"><span class="icon-caret-right"></span>Comment</a></li>
+    </ul>
+
+    <h2><span class="icon-hdd-o"></span>SYSTEM</h2>
+    <ul >
+      <li><a href="/admin/banner" target="right"><span class="icon-caret-right"></span>Banner</a></li>
+      <li><a href="/admin/system" target="right"><span class="icon-caret-right"></span>System</a></li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+      $(".leftnav h2").click(function () {
+        $(this).next().slideToggle(200);
+        $(this).toggleClass("on");
+      })
+      $(".leftnav ul li a").click(function () {
+        $("#a_leader_txt").text($(this).text());
+        $(".leftnav ul li a").removeClass("on");
+        $(this).addClass("on");
+      })
+    });
+  </script>
+  <div class="admin">
+    <iframe scrolling="auto" rameborder="0" src="admin/welcome" name="right" width="100%" height="100%"></iframe>
+  </div>
+</body>
+</html>

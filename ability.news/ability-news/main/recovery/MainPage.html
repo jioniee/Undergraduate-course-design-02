@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="/public/home/css/main.css">
+	<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/public/home/js/MainPage.js"></script>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<title>Main Page</title>
+</head>
+
+<body>
+	<!-- the header for this website -->
+	<div class="container-fluid">
+		<div class="jumbotron" >
+		<div id="banner_button_all">
+			<button class="banner_button banner_button1" id="text_button">Text</button>
+			<button class="banner_button banner_button2" id="image_button">Image</button>
+		</div>
+
+
+
+			<div class="screen_dropdown">
+				<div class="screen_btn">Want to use a screen reader to acccess this website?</div>
+				<div id="screen_myDropdown" class="screen_dropdown-content">
+					<div class="screen_reader" id="google_exrension">
+						The Chrome Screen reader extension is a showcase of a
+						fully featured screen reader for the web built using only web technologies such as html and javascript. You need to use google browser to use this tool.
+						<br>
+						<br>
+						Get it now: <a href="https://chrome.google.com/webstore/detail/screen-reader/kgejglhpjiefppelpmljglcjbhoiplfn">Google extension: Screen Reader</a>
+					</div>
+					<div class="screen_reader" id="NV_access">
+						NV access is a more powerful screen reader. You need about 2 minutes to download and install this software
+						<br>
+						<br>
+						Get it now: <a href="https://www.nvaccess.org/download/">NV access</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="banner">
+				<div id="banner_text">
+
+				 </div>
+
+				<div>
+					<input type="button" id="leftBtn" value="last">
+					<input type="button" id="rightBtn" value="next"/>
+				</div>
+
+				<div id="points">
+					<span class="shover"></span>
+					<span class="normal"></span>
+					<span class="normal"></span>
+					<span class="normal"></span>
+					<span class="normal"></span>
+					<span class="normal"></span>
+				</div>
+			</div>
+
+
+			<!-- <h1>want more?</h1> -->
+				<!-- <p><a class="btn btn-info btn-lg sign-up" role="button" href="/user/signup">sign up</a>				 -->
+					<script>
+						
+						$(document).ready(function(){
+						$.ajax({
+							url:"http://localhost:3000/user/username",
+							type:"post",
+							success:function(data){
+								if (data.length > 10){
+									//alert("get"+data);
+								}
+								else{
+								
+								var signup = document.getElementsByClassName("sign-up");
+								var login = document.getElementsByClassName("log-in");
+								signup[0].innerHTML = "welcome! " + data;
+								login[0].innerHTML = "welcome! " + data;
+								signup[1].style.display = "none";
+							}
+							},
+							error:function(data){
+								
+						}
+					})
+				})
+
+
+      				  // jQuery代码
+       			 		 $(document).ready(function () {
+          			 		 $("#b1").click(function () {
+                				$("#tab_1").show();
+               			 		$("#tab_2").hide();
+               			 		$("#tab_3").hide();
+               			 		$("#tab_4").hide();
+               			 		$("#tab_5").hide();
+           				 });
+           				 $("#b2").click(function () {
+              				    $("#tab_1").hide();
+               			 		$("#tab_2").show();
+               			 		$("#tab_3").hide();
+               			 		$("#tab_4").hide();
+               			 		$("#tab_5").hide();
+          			 	 });
+          			 	 $("#b3").click(function () {
+              				    $("#tab_1").hide();
+               			 		$("#tab_2").hide();
+               			 		$("#tab_3").show();
+               			 		$("#tab_4").hide();
+               			 		$("#tab_5").hide();
+          			 	 });
+          			 	 $("#b4").click(function () {
+              				    $("#tab_1").hide();
+               			 		$("#tab_2").hide();
+               			 		$("#tab_3").hide();
+               			 		$("#tab_4").show();
+               			 		$("#tab_5").hide();
+          			 	 });
+          			 	 $("#b5").click(function () {
+              				    $("#tab_1").hide();
+               			 		$("#tab_2").hide();
+               			 		$("#tab_3").hide();
+               			 		$("#tab_4").hide();
+               			 		$("#tab_5").show();
+          			 	 });
+    		    });
+
+				$(document).ready(function(){
+						$.ajax({
+							url:"http://localhost:3000/user/usertype",
+							type:"post",
+							success:function(data){
+								if (data.length > 10){
+									//alert("get"+data);
+								}
+								else{
+									var login = document.getElementsByClassName("log-in");
+									var signup = document.getElementsByClassName("sign-up");
+									if (data=="editor"){
+										login[0].href = "user/editor";
+										signup[0].href = "user/editor";
+									}
+									if (data=="reporter"){
+										login[0].href = "user/reporter";
+										signup[0].href = "user/reporter";
+									}
+								//alert("get"+data);
+							}
+							},
+							error:function(data){
+								
+						}
+					})
+				})
+					
+					</script>
+		</div>
+	</div>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="/" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						NEWS
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						FORUM
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						CONNECTIONS
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						ABOUT
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+						<li><a href="#">Item</a></li>
+					</ul>
+				</li>
+			</ul>
+			<script>
+				$(function() {
+				  $("#test").click(function() {
+					$(".dropdown-toggle").dropdown('toggle');
+				  })
+				})
+			  </script>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">				
+				<% if (user) { %>
+					<li><a class = "log-in" href="/admin"><%= user %></a></li>
+				<%} else { %>
+					<li><a class = "log-in" href="/login">Log in</a></li>
+				<% } %>
+				<!-- <li><a class = "log-in" href="/login">Log in</a></li> -->
+				<li><a class = "sign-up"href="/signup">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<!-- Set up the left part for this page -->
+			<div class="col-sm-2">
+				<!-- edit the side bar of the left page -->
+				<div class="list-group side-bar">
+					<% typeData.forEach(item=>{%>
+					<a href="/?id=<%= item.id %>" class="list-group-item"><%= item.name %></a>
+						<!-- <a href="/news/business" class="list-group-item">SUPPORTS</a>
+						
+						<a href="#" class="list-group-item">IDEAS</a>
+						<a href="#" class="list-group-item">POLICY</a>
+						<a href="#" class="list-group-item"> SPECIALIST PROVIDERS</a> -->
+						<!-- <a href="#" class="list-group-item">item</a> -->
+					<% }) %>
+				</div>
+			</div>
+
+			<!-- set up the main part in the middle of this page -->
+			<div class="col-sm-7">
+				<!-- edit the main part for this page and this part is called news-list -->
+				<div class="news-list">
+					<% data.forEach(item=>{%>
+
+						<!-- area for every piece of news is called news-list-item  -->
+						<div class="news-list-item clearfix">
+							<!-- this part is to set the picture for every piece of news -->
+							<div class="col-xs-3">
+								<!-- set the area the picture is supposed to locate in -->
+								<img src="<%= item.img%>" height="100" width="100" alt="">
+							</div>
+							<!-- this part is for the main body for every piece of news  -->
+							<div class="col-xs-9">
+								<a href="news?id=<%= item.id%>" class="title"><%= item.title%></a>
+								<!-- This part is about the author and published time -->
+								<div class="info">
+									<span><span class="avatar"><img src="public/home/img/logo.jpg"></span><%= item.author%></span>,
+									<span><%= item.time%></span>
+									</div>
+								</div>
+							</div>
+
+						
+					<%})%>
+				</div>
+			</div>
+			<!-- this part is about the right place for this whole page -->
+			<div class="col-sm-3">
+				<!-- set up the search bar for the right part -->
+				<div class="search-bar">
+					<input type="search" class="form-control">
+					<!-- this part can be divided into several side-bar-card -->
+					<div class="side-bar-card special clearfix">
+						<div class="col-xs-5">
+							<img src="/public/home/img/logo.jpg">
+						</div>
+						<div class="col-xs-7">
+							<div class="text-one">Contact: 123456</div>
+							<div >Other information</div>
+						</div>
+					</div>
+					<div class="side-bar-card">
+						<!-- This is the list of everything we want show in this part -->
+						<% recommenddata.forEach(item=>{%>
+						<div class="card-body">
+							<div class="card-title"><%= item.title%></div>
+							<div class="list">
+								<!-- each item is one piece of what we want share here -->
+								<div class="item">
+									<div class="title"><%= item.summary%></div>
+									<!-- description for this part -->
+									<div class="desc"><%= item.time%></div>
+								</div>
+							</div>
+						</div>
+						<%})%>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="footer">
+		AbilityNews| Professional Software Engineering Project - Sem 1 2021 | the Australian National University 
+	</div>
+
+</body>
+
+</html>

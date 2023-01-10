@@ -1,0 +1,69 @@
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img,
+.side-bar .list-group-item {
+  border-radius: 3px;
+}
+
+.navbar-brand {
+  /*set up the logo picture for the navbar*/
+  width: 60px;
+  background-image: url(../img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}
+
+.side-bar .list-group-item {
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active {
+  background-color: #ea0c3c;
+}
+
+.news-list-item {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #000;
+}
+
+.news-list-item:first-child {
+  margin-top: 0;
+}
+
+.news-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block;
+  color: #000;
+}
+
+.news-list-item .title:hover {
+  color: #33CCFF;
+}
+
+.news-list-item .info {
+  color: #ccc;
+}
+
+.avatar {
+  display: inline-block;
+}
+
+.avatar img {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}

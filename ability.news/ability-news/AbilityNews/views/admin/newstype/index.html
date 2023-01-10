@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="renderer" content="webkit">
+	<title></title>
+	<link rel="stylesheet" href="/public/admin/css/pintuer.css">
+	<link rel="stylesheet" href="/public/admin/css/admin.css">
+	<script src="/public/admin/js/jquery.js"></script>
+	<script src="/public/admin/js/pintuer.js"></script>
+</head>
+
+<body>
+	<div class="panel admin-panel">
+		<div class="panel-head"><strong class="icon-reorder"> list of topic</strong> <a href=""
+				style="float:right; display:none;">添加字段</a></div>
+		<div class="padding border-bottom">
+			<ul class="search" style="padding-left:10px;">
+				<li> <a class="button border-main icon-plus-square-o" href="/admin/newstype/add"> add a new topic</a> </li>
+				<li>
+					<form action="" method="get">
+						<input type="text" placeholder="enter the keywords" name="search" class="input"
+							style="width:250px; line-height:17px;display:inline-block" />
+						<button class="button border-main icon-search"> search</button>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<table class="table table-hover text-center">
+			<tr>
+				<th width="100" style="text-align:left; padding-left:20px;">ID</th>
+				<th>name</th>
+				<th>keywords</th>
+				<th>description</th>
+				<th>sort</th>
+				<th width="310">operation</th>
+			</tr>
+			<% data.forEach(item=>{%>
+			<tr>
+				<td><%= item.id%></td>
+				<td><%= item.name%></td>
+				<td><%= item.keywords%></td>
+				<td><%= item.description%></td>
+				<td>
+					<input type="number" name="" id="" style="width: 60px; text-align:center;" value="<%= item.sort%>" onchange="changesort(this,`<%= item.id%>`)">
+				</td>
+				<td>
+					<div class="button-group">
+						<a class="button border-main" href="/admin/newstype/edit?id=<%= item.id %>"><span
+								class="icon-edit"></span> edit</a>
+						<a class="button border-red" href="javascript:void(0)"
+							onclick="del(this,`<%= item.id%>`)"><span class="icon-trash-o"></span>
+							delete</a>
+					</div>
+				</td>
+			</tr>
+			<% }) %>
+		</table>
+	</div>
+	</form>
+	<script>
+		// 无刷新删除数据
+		function del(obj, id) {
+			// 确认框
+			if (confirm("sure to delete?")) {
+				// 发送ajax请求删除
+				$.get("/admin/newstype/ajax_del", { id:id }, function (data) {
+					// 判断是否删除成功
+					if(data ==1){
+						// 移除显示的数据
+						$(obj).parents("tr").remove();
+						alert('success');
+					}else{
+						alert("failure");
+					}
+				})
+			}
+		}
+
+		// 无刷新改变排序
+		function changesort(obj,id){
+			// 获取排序框里面的数据
+			let sort = $(obj).val();
+			// 发送ajax请求执行修改操作
+			$.get("/admin/newstype/ajax_sort",{id:id,sort:sort},function(data){
+				if(data == 1){
+					window.location.reload();
+				}
+			})
+		}
+	</script>
+</body>
+
+</html>

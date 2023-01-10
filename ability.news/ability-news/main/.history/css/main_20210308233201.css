@@ -1,0 +1,35 @@
+.navbar-brand {
+  /*set up the logo picture for the navbar*/
+  width: 60px;
+  background-image: url(../img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}
+
+.side-bar .list-group-item {
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active {
+  background-color: #ea0c3c;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img, .side-bar .list-group-item {
+  border-radius: 3px;
+}
+
+.news-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.news-list-item .info {
+  color: ccc;
+}

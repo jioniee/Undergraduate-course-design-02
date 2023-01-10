@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!--<link rel="stylesheet" type="text/css" href="css/main.css">-->
+	<link rel="stylesheet" type="text/css" href="../../../public/user/css/personalPage.css">
+	<title>Personal page</title>
+</head>
+
+<body>
+	<!-- Edit the navbar -->
+	<div class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<!-- set up logo picture and link it to the main page -->
+				<a href="MainPage.html" class="navbar-brand"></a>
+			</div>
+			<!-- edit the content for this navbar -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+				<li><a href="#">item</a></li>
+			</ul>
+			<!-- the log in and log out part -->
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="LogIn.html">Log in</a></li>
+				<li><a href="SignUp.html">Sign up</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container">
+    <!--Edit the side menu-->
+    <div class="col-sm-2">
+        <!-- edit the side bar of the left page -->
+        <div class="list-group side-bar">
+			<a href="./personalPage_myProfile_editor.html" class="list-group-item">My Profile</a>
+			<a href="./publishQueue.html" class="list-group-item">Publish Queue</a>
+			<a href="./personalPage_myComments_editor.html" class="list-group-item">My Comments</a>
+
+			<div id="nav-title1" class="list-group-item"><a href="#" >My Posts<i></i></a></div>
+			
+			<div class="hide1">
+				<a class="hide2" href="./personalPage_successfulPost_editor.html" >-&nbsp;Successful Posts</a>
+				<a class="hide2" href="./personalPage_returnedPost_editor.html" >-&nbsp;Returned Posts</a>
+			</div>
+			<a href="./personalPage_myDraft_editor.html" class="list-group-item">My Draft</a>
+			<a href="./personalPage_myBookmarks_editor.html" class="list-group-item">My Bookmarks</a>
+			<a href="./personalPage_secureCenter_editor.html" class="list-group-item active">Secure Center</a>
+        </div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="../../../router/personalPage.js"></script>
+	<!--Edit the secure center page-->
+
+    
+    <div class="privacy">
+		<div class="header">
+			<h1>Privacy & Safety</h1>
+			
+			<p>Manage how we use data to personalize your website experience.
+				 To learn more, please visit our <a id="FAQ" href="">Privacy and Safety FAQ</a>.</p>
+			<hr>
+		</div>
+		<div class="content">
+			<h2>Show up in search results</h2>
+			<input class="switch" type="checkbox"/>
+			<p>Allow search engines such as Google to link to your profile in their search results.</p>
+			<br>
+			<h2>Personalized recommendations based on your geographic location</h2>
+			<input class="switch" type="checkbox"/>
+			<p>Allow us to recommend better news posts using your city, state or country.</p>
+			<br>
+			<h2>Email notification</h2>
+			<input class="switch" type="checkbox"/>
+			<p>Unsubsribe from all emails.</p>
+		</div>
+	</div>
+
+    </div>
+</body>
+</html>

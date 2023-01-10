@@ -1,0 +1,315 @@
+*{
+  box-sizing: border-box;
+}
+/* set up the linkable part when mouse hovering */
+a:hover {
+  text-decoration: none;
+}
+
+/* set up image display */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* set border-radius for image and the left side-bar */
+img,
+.side-bar .list-group-item,
+.side-bar-card {
+  border-radius: 3px;
+}
+
+/* set up the navigation bar */
+.navbar-brand {
+  /*set up the logo picture for the navbar*/
+  width: 60px;
+  background-image: url(../img/logo.jpg);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: center center;
+}
+
+.side-bar .list-group-item {
+  border: 0;
+  margin-bottom: 5px;
+}
+
+.side-bar .list-group-item.active {
+  background-color: #ea0c3c;
+}
+
+.news-list-item {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-list-item:first-child {
+  padding-top: 0;
+}
+
+.news-list-item .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.5;
+  display: block;
+  color: #000;
+}
+
+.news-list-item .title:hover {
+  color: #33CCFF;
+}
+
+.news-list-item .info {
+  color: #ccc;
+}
+
+.avatar {
+  display: inline-block;
+}
+
+.avatar img {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.side-bar-card {
+  background: rgba(0, 0, 0, .05);
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+.side-bar-card.special {
+  padding: 15px 0;
+}
+
+.side-bar-card .text-one {
+  font-size: 150%;
+}
+
+.side-bar-card .card-title, 
+.side-bar-card .card-body .list .item{
+  padding: 10px 20px;
+}
+
+.side-bar-card .card-title {
+  font-size: 150%;
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.side-bar-card .card-body .list .item:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.side-bar-card .card-body .list .item .title {
+  padding-bottom: 5px;
+}
+
+.side-bar-card .card-body .list .item .desc {
+  color: #999;
+}
+
+.news-title {
+  line-height: 1.1;
+}
+/* set up the style for news headline */
+.news_headline{
+  line-height: 22px;
+  font-style: italic;
+  color: #656565;
+  font-size: 18px;
+}
+
+
+.newsinfo .time{
+  font-family: HelveticaNeue;
+  font-size: 12px;
+  line-height: 10px;
+}
+.news_header{
+  overflow: hidden;
+}
+.newsInfoContent{
+  float: left;
+  color: #656565;
+}
+.font-adjust{
+  float:right;
+}
+
+.news-content {
+  margin-top: 15px;
+  line-height: 1.5;
+  font-family: TiemposText,Georgia,Times New Roman,Times,serif;
+  font-size: 18px;
+  color: #000;
+}
+
+.caption{
+  font-size: 13px;
+  line-height: 1.23;
+  color: #6c6d6f;
+}
+
+.news-content img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.like-wrapper{
+  margin-top: 20px;
+  float: left;
+}
+.like-wrapper span{
+  display: block;
+  font-size: 20px;
+  margin-right: 10px;
+  float: left;
+}
+
+.share-wrapper{
+  float: right;
+  margin: 25px;
+}
+.share-wrapper a{
+  margin-right: 20px;
+}
+
+.no-padding-h {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.footer {
+  margin-top: 20px;
+  padding: 50px 0;
+  text-align: center;
+  color: #999;
+}
+
+.container-small {
+  max-width: 500px;
+}
+
+
+/* for comment list */
+.comment-list{
+  width: 600px;
+  margin: 20px auto;
+  clear: both;
+  padding-top: 20px;
+}
+.comment-list .comment-info{
+  position: relative;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.comment-list .comment-info header{
+  width: 10%;
+  position: absolute;
+}
+.comment-list .comment-info header img{
+  width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+}
+.comment-list .comment-info .comment-right{
+  padding:5px 0px 5px 11%; 
+}
+.comment-list .comment-info .comment-right h3{
+  margin: 5px 0px;
+}
+.comment-list .comment-info .comment-right .comment-content-header{
+  height: 25px;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span{
+  padding-right: 2em;
+  color: #aaa;
+}
+.comment-list .comment-info .comment-right .comment-content-header span,.comment-list .comment-info .comment-right .comment-content-footer span.reply-btn,.send,.reply-list-btn{
+  cursor: pointer;
+}
+.comment-list .comment-info .comment-right .reply-list {
+  border-left: 3px solid #ccc;
+  padding-left: 7px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply{
+  border-bottom: 1px dashed #ccc;
+}
+.comment-list .comment-info .comment-right .reply-list .reply div span{
+  padding-left: 10px;
+}
+.comment-list .comment-info .comment-right .reply-list .reply p span{
+  padding-right: 2em;
+  color: #aaa;
+}
+
+/* for comment edit */
+.mytextarea {
+  width: 100%;
+  overflow: auto;
+  word-break: break-all;
+  height: 100px;
+  color: #000;
+  font-size: 1em;
+  resize: none;
+}
+
+.jumbotron{
+  background:url("https://dummyimage.com/1920x800/000/fff&text=FFFFFFFFFF");
+  margin-bottom: 0;
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+  min-height: 400px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #fff;
+}
+
+.recommendations{
+  background-color:#eee;
+  margin-bottom: 20px;
+}
+.recom_pic{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: small;
+  font-weight: bold;
+}
+.recom_pic:hover{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.side-bar-card{
+  height: 500px;
+}
+
+.like-number{
+  padding-left: 20px;
+  padding-top: 15px;
+  font-size: 20px;
+}
+
+.glyphicon-thumbs-up{
+  padding: 10px;
+  font-size: 30px;
+}
+
+.glyphicon-thumbs-up:hover{
+  background-color: antiquewhite;
+
+}
+
+
